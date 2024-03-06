@@ -1,0 +1,46 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    padding: 0.5%;
+    font-family: cursive;
+
+}
+body{
+    height: 100vh;
+    width: 100vw;
+    background-image: url("./background.jpg");
+    /* background-attachment: fixed; */
+  background-size: cover; 
+  overflow-x: hidden;
+  overflow-y: hidden;
+   
+}
+
+.main{
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    
+  
+}
+button{
+         background-color: azure;
+         margin-left: 40vw;
+         margin-top: 7vh;
+         margin-right: 40vw;
+         width: 15vw;
+         height: 10vh;
+         border-radius: 1rem;
+         font-size: 2vw;
+         border: 3px solid black;
+}
+h1{
+    text-align: center;
+    color: azure;
+    text-decoration: underline;
+    text-decoration-color: black;
+    /* text-shadow: 1px 1px 2px; */
+    font-size: 4vw;
+}

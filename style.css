@@ -1,0 +1,345 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+     box-sizing: border-box;
+     overflow-x: hidden;
+     /* border-radius: 1rem; */
+}
+body{
+    height: 100vh;
+    width: 100vw;
+}
+.main{
+    height: fit-content;
+    width: auto;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    
+    /* overflow-y: scroll; */
+    /*  */
+    
+    background:  rgb(250, 249, 246);
+    
+}
+#logo{
+    height: 12vh;
+    width: 100vw;
+    border-radius: 0px;
+    display: flex;
+    flex-direction: row;
+    /* justify-content: ; */
+    /* background: rgb(64, 63, 63); */
+    align-items: center;
+    
+}
+.logo img{
+    height: 100%;
+    width: 6vw;
+    border-radius: 1rem;
+    border: 0.2rem solid black;
+    
+   
+}
+.nav{
+    height:fit-content ;
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+     /* background: blue; */
+    justify-content: space-evenly;
+    margin-top: 1rem;
+    font-size: 1.5rem;
+    text-decoration: underline;
+}
+#newsbody{
+    height:200vh;
+    width: 100%;
+    /* background: rgb(117, 217, 161); */
+    padding: 2rem;
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+   
+    
+}
+.firstHalfNews{
+    width: 80%;
+    height: 80%;
+   
+    display: grid;
+    grid-template-rows: repeat(2,1fr);
+    grid-template-columns: repeat(3,1fr);
+    gap: 0.7rem;
+    padding: 1.5rem;
+    
+    
+  
+}
+#news1{
+     grid-row-start: 1;
+    grid-row-end: 3;
+    overflow-y: hidden;
+    border-radius: 1rem;
+   
+  
+}
+#news2{
+    /* grid-row-start: 1;
+    grid-row-start: 3; */
+    grid-column-start: 2;
+    grid-column-end: 3;
+    overflow-y: hidden;
+    border-radius: 1rem;
+   
+}#news3{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    overflow-y: hidden;
+    border-radius: 1rem;
+  
+}
+#news4{
+    /* grid-column-start: 2;
+    grid-column-end: 3; */
+    overflow-y: hidden;
+    border-radius: 1rem;
+}
+#news5{
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    overflow-y: hidden;
+    border-radius: 1rem;
+  
+}
+#secondHalfNews{
+    margin-top: 1rem;
+    /* background: blanchedalmond; */
+    height: 90% ;
+    width:  70%;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(2,1fr);
+    gap: 0.7rem;
+    padding: 1.5rem;
+}
+
+
+.foot{
+    margin-top: 0.5em;
+    height: 30%;
+    width: 100vw;
+    background-color: black;
+    color:rgb(250, 249, 246);
+    font-size: xx-large;
+    padding: 2rem;
+    overflow-y: hidden;
+    border-radius: 0px;
+}
+
+.newshalf{
+    border: 0.1rem solid black;
+    border-radius: 1rem;
+    padding: 1rem;
+}
+.newshalf img{
+       height: 50%;
+       width: 100%;
+       border-bottom: 0.1rem solid black;
+       border-radius: 1rem;
+       object-fit: cover;
+      
+}
+.badaimg{
+    height: 50%;
+    width: 100%;
+}
+.write{
+    height: 50%;
+    width: 100%;
+    font-size: 2vw;
+    padding: 1rem;
+    overflow-y: hidden;
+   
+}
+a{
+    color: black;
+    text-decoration: none;
+    font-size: 1.2vw;
+}
+#news1:hover{
+   transform: scale(0.95);
+}
+#news2:hover{
+    transform: scale(0.95);
+ }
+ #news3:hover{
+    transform: scale(0.95);
+ }
+ #news4:hover{
+    transform: scale(0.95);
+ }
+ #news5:hover{
+    transform: scale(0.95);
+ }
+ .newshalf{
+    overflow-y: hidden
+ }
+ .newshalf:hover{
+    transform: scale(0.95);
+ }
+ .nav_div:hover{
+    transform: scale(0.95);
+    /* color: rgb(122, 113, 113); */
+    background: lightgrey;
+    cursor: pointer;
+ }
+ /* Reset some default styles */
+
+
+/* body {
+    font-family: Arial, sans-serif;
+} */
+
+/* Style for the search container */
+.search-container {
+    text-align: center;
+    /* margin-top: 50px; */
+    margin-left: 40vw;
+    border: 0.1rem solid black;
+    padding: 1rem;
+    border-radius: 1rem;
+}
+
+/* Style for the search input */
+.search-input {
+    padding: 1em;
+    width: 30vw;
+    border: 1px solid #ccc;
+    border-radius: 1rem;
+    outline: none;
+    border: 0.05rem solid black;
+  
+}
+
+/* Style for the search button */
+.search-button {
+    padding: 10px 20px;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Hover effect for the search button */
+.search-button:hover {
+    background-color: rgb(98, 98, 98);
+}
+hr{
+    margin-top: 1rem;
+    border: 0.09rem solid black;
+}
+span{
+    color: red;
+    
+}
+a:hover{
+    text-decoration: underline;
+}
+#amaan{
+    font-family: cursive;
+    font-weight: normal;
+    text-decoration: underline;
+}
+::-webkit-scrollbar {
+    width: 0.5vw;
+  }
+::-webkit-scrollbar-thumb {
+    background: black; 
+    border-radius: 1rem;
+  }
+ .nav{
+    font-size: 1.5vw;
+ }
+ @media screen and (max-width: 550px) {
+    .firstHalfNews{
+        width: 80%;
+        height: 80%;
+       
+        display: flex;
+        /* grid-template-rows: repeat(2,1fr);
+        grid-template-columns: repeat(3,1fr); */
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 0.7rem;
+        padding: 1.5rem;
+        
+  }
+  #secondHalfNews{
+    margin-top: 1rem;
+    /* background: blanchedalmond; */
+    height: 90% ;
+    width:  70%;
+    display: flex;
+    /* grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(2,1fr); */
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 0.7rem;
+    padding: 1.5rem;
+}
+#l{
+    height: 10vh;
+    width: 15vw;
+    object-fit: cover;
+}
+.search-container{
+    display: none;
+}
+.foot{
+    font-size: 5vw;
+}
+#newsbody{
+    padding: 0px;
+
+   
+    width: fit-content;
+    margin-left: 0vw;
+    margin-top: 0px;
+    
+}
+.mo{
+    height: fit-content;
+    width: 100%;
+    display: flex;
+    /* flex-wrap: wrap; */
+    flex-direction: row;
+   
+}
+.nav{
+    display: flex;
+    flex-direction: column;
+ 
+    height: 50vh;
+    width: 35vw;
+    
+    justify-content: space-evenly;
+    font-size: 4vw;
+
+}
+/* hr{
+    display: none;
+} */
+.newshalf a{
+    font-size: 2.7vw;
+}
+
+}
